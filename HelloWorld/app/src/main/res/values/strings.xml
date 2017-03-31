@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="nomeDoApp">Ola mundo, Android!</string>
+    <string name="titulo">Digite  o seu nome.</string>
+    <string name="surpreenda_me">Surpreenda-me</string>
+    <string name="destino">Destino:</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negócios</string>
+    <string name="tipoViagem">Tipo de viagem</string>
+    <string name="dataChegada">Data de chegada:</string>
+    <string name="dataPartida">Data de partida:</string>
+    <string name="orcamnto">Orçamento: R$</string>
+    <string name="QuantidadePessoas">Quantidade de Pessoas:</string>
+    <string name="enviar">Enviar</string>
+    <string name="criarViagem">Criar nova viagem</string>
+    <string name="tipoGasto">Tipo de gasto:</string>
+    <string name="valorGasto">Valor: R$</string>
+    <string name="descricaoGasto">Descrição</string>
+    <string name="localizacaoGasto">Localização</string>
+    <string name="gostar">Gostei!</string>
+    <string name="dataGasto">Data:</string>
+    <string name="AnexarFoto">Anexar foto</string>
+
+    <string-array name="tiposDeGastos">
+        <item>Alimentação</item>
+        <item>Combustivel</item>
+        <item>Hospedagem</item>
+        <item>Passeio</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="salvar">Salvar</string>
+
+</resources>

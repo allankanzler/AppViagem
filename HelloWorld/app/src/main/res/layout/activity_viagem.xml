@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Destino-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/destino"/>
+    <EditText
+        android:id="@+id/destinoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+    </EditText>
+
+    <!--Tipo de viagem-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipoViagem"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioLazer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lazer"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radioNegocios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/negocios"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow>
+    <!--Data de chegada-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dataChegada"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+        <Button
+            android:id="@+id/buttonChegada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha"
+            android:onClick="onDataChegadaClick"/>
+        <TextView
+            android:id="@+id/dataChegadaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+    </TableRow>
+    <TableRow>
+    <!--Data de partida-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dataPartida"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/buttonPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escolha"
+                android:onClick="onPartidadaClick"/>
+            <TextView
+                android:id="@+id/dataPartidaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+    </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/orcamentoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orcamnto"/>
+    <EditText
+        android:id="@+id/orcamentoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow>
+    <TextView
+        android:id="@+id/QuantidadePessoasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/QuantidadePessoas"/>
+    <EditText
+        android:id="@+id/QuantidadePessoasEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_gravity="center"
+        android:onClick="tirarFoto"
+        android:text="@string/AnexarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/EnviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="criarViagem"
+        android:text="@string/criarViagem"/>
+
+</LinearLayout>

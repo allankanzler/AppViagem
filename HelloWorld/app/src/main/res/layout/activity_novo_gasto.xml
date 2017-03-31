@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //Tipo de gasto
+    <TextView
+        android:id="@+id/tipoGastoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipoGasto"/>
+    <Spinner
+        android:id="@+id/tipoGastoComobo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+    </Spinner>
+
+    //Valor
+    <TextView
+        android:id="@+id/valorGastoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valorGasto"/>
+    <EditText
+        android:id="@+id/valorGastoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    //Data do gasto
+    <TextView
+        android:id="@+id/dataGastoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dataGasto"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/buttonData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escolha"
+                android:onClick="onDataGastoClick"/>
+            <TextView
+                android:id="@+id/dataGasto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    //Descrição do Gasto
+    <TextView
+        android:id="@+id/descricaoGastoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descricaoGasto"/>
+    <EditText
+        android:id="@+id/descricaoGastoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    //Localização
+    <TextView
+        android:id="@+id/localGastoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/localizacaoGasto"/>
+    <EditText
+        android:id="@+id/localizacaoGastoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/EnviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="gostarGasto"
+        android:text="@string/gostar"/>
+
+    <Button
+        android:id="@+id/Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="salvarTudo"
+        android:text="@string/salvar"/>
+
+
+
+
+</LinearLayout>
